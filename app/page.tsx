@@ -26,7 +26,7 @@ export default function Home() {
                     <Image
                       src={"/images.jpeg"}
                       alt="sjx"
-                      quality={80}
+                      quality={99}
                       height={200}
                       width={200}
                       className=" h-full rounded-full w-full border border-neutral-500/60 p-1"
