@@ -11,7 +11,7 @@ export default function Home() {
         bg-size-[20px_20px] flex justify-center items-center"
       >
         <Container>
-          <div className="relative h-screen w-5xl bg-neutral-100 dark:bg-neutral-950">
+          <div className="relative h-screen w-5xl bg-neutral-100 dark:bg-neutral-950 flex justify-center items-center  ">
             <div
               className=" bg-[linear-gradient(to_right,#00000014_1px,transparent_1px),
               linear-gradient(to_bottom,#0000000F_1px,transparent_1px)]

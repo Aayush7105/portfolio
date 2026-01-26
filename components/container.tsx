@@ -32,7 +32,12 @@ const itemVariants: Variants = {
 
 const Container = ({ children }: { children: React.ReactNode }) => {
   return (
-    <motion.div variants={containerVariants} initial="hidden" animate="show">
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="show"
+      className="flex min-h-screen items-center justify-center px-4 py-10"
+    >
       {React.Children.map(children, (child) => (
         <motion.div variants={itemVariants}>{child}</motion.div>
       ))}
