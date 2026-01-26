@@ -2,10 +2,11 @@ import ChangingTextMotion from "@/components/ChangingTextMotion";
 import { Themetoggle } from "@/components/ui/theme-toggle";
 import Image from "next/image";
 import { FaDiamond } from "react-icons/fa6";
+import Aboutme from "./Aboutme";
 
 const Landing = () => {
   return (
-    <div className="min-h-screen sm:w-[90%] md:w-[85%] border border-dashed border-neutral-600/40 dark:border-neutral-500/50 sm:py-16">
+    <div className="min-h-screen sm:w-[90%] md:w-[85%] border border-dashed border-neutral-600/40 dark:border-neutral-500/50 sm:py-16 flex flex-col">
       {/* Mobile Layout */}
       <div className="md:hidden border-b border-t border-dashed border-neutral-600/40 dark:border-neutral-500/50 p-4">
         {/* Toggle on top right for mobile */}
@@ -71,6 +72,7 @@ const Landing = () => {
           <Themetoggle />
         </div>
       </div>
+      <Aboutme />
     </div>
   );
 };
