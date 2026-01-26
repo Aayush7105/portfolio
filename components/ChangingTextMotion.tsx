@@ -25,7 +25,7 @@ export default function ChangingTextMotion() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="text-sm font-mono tracking-widest uppercase text-neutral-500"
+          className="text-sm font-mono tracking-widest uppercase text-neutral-700 dark:text-neutral-500"
         >
           {words[index]}
         </motion.p>
