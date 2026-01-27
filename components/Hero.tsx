@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
 
           <div className="flex-1 flex flex-col justify-center min-w-0">
-            <h1 className="w-fit font-mono text-xl text-neutral-800 dark:text-neutral-300 tracking-tighter border border-dashed border-neutral-600/40 dark:border-white/20 px-1.5 py-0.5 leading-tight">
+            <h1 className="w-fit font-mono text-2xl text-neutral-800 dark:text-neutral-300 tracking-tighter border border-dashed border-neutral-600/40 dark:border-white/20 px-1.5 py-0.5 leading-tight">
               Aayush Rawat
             </h1>
             <div className="flex items-center gap-1.5 pt-0.5 flex-wrap">

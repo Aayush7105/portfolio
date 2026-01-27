@@ -1,7 +1,7 @@
 import React from "react";
 
 const AboutMe = () => (
-  <article className="border-b border-dashed border-neutral-600/60 dark:border-neutral-500/50 px-6 py-8 font-mono text-sm tracking-wide text-neutral-700 dark:text-neutral-300/70 sm:px-8 sm:py-10 md:px-12">
+  <article className="border-b border-dashed border-neutral-600/60 dark:border-neutral-500/50 px-6 py-8 font-mono text-sm tracking-wide text-neutral-700 dark:text-neutral-400/70 sm:px-8 sm:py-10 md:px-12">
     <p className="mb-5 text-pretty">
       I’m a{" "}
       <strong className="text-neutral-800 dark:text-neutral-200">
