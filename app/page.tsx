@@ -1,3 +1,4 @@
+import Container from "@/components/container";
 import Landing from "@/components/Landing";
 
 export default function Home() {
@@ -8,7 +9,9 @@ export default function Home() {
         bg-[radial-gradient(#00000033_1px,transparent_1px)]
         bg-size-[20px_20px] flex justify-center items-center "
     >
-      <Landing />
+      <Container>
+        <Landing />
+      </Container>
     </main>
   );
 }
