@@ -6,35 +6,37 @@ import { FaDiamond } from "react-icons/fa6";
 const Hero = () => {
   return (
     <>
-      <div className="md:hidden border-b border-t border-dashed border-neutral-600/40 dark:border-neutral-500/50 p-4">
+      <div className="md:hidden border-b border-t border-dashed border-neutral-600/40 dark:border-neutral-500/50 px-2 py-2">
         {/* Toggle on top right for mobile */}
-        <div className="flex justify-end mb-4">
+        <div className="flex justify-end mb-2">
           <Themetoggle />
         </div>
 
         {/* Image on left, Name and details on right in one line for mobile */}
-        <div className="flex items-center gap-3">
-          <div className="w-30 shrink-0">
+        <div className="flex items-center gap-2 w-full">
+          <div className="w-20 h-20 shrink-0 flex-none">
             <Image
               src={"/images.jpeg"}
               alt="sjx"
               quality={99}
-              height={100}
-              width={100}
-              className="h-full rounded-full w-full border border-neutral-500/60 p-1"
+              height={56}
+              width={56}
+              className="h-full rounded-full w-full border border-neutral-500/60 p-0.5 object-cover"
             />
           </div>
 
-          <div className="flex-1 flex flex-col justify-center">
-            <h1 className="font-mono text-2xl sm:text-2xl text-neutral-800 dark:text-neutral-300 tracking-tighter border border-dashed border-neutral-600/40 dark:border-white/20 px-3 py-2 leading-tight">
+          <div className="flex-1 flex flex-col justify-center min-w-0">
+            <h1 className="w-fit font-mono text-xl text-neutral-800 dark:text-neutral-300 tracking-tighter border border-dashed border-neutral-600/40 dark:border-white/20 px-1.5 py-0.5 leading-tight">
               Aayush Rawat
             </h1>
-            <div className="flex items-center gap-2 pt-1">
-              <p className="font-mono text-sm text-neutral-800 dark:text-neutral-500">
+            <div className="flex items-center gap-1.5 pt-0.5 flex-wrap">
+              <p className="font-mono text-xs text-neutral-800 dark:text-neutral-500">
                 21
               </p>
-              <FaDiamond className="size-1 fill-neutral-600 dark:fill-neutral-400" />
-              <ChangingTextMotion />
+              <FaDiamond className="size-0.5 fill-neutral-600 dark:fill-neutral-400" />
+              <div className="text-xs">
+                <ChangingTextMotion />
+              </div>
             </div>
           </div>
         </div>
