@@ -4,10 +4,10 @@ import Landing from "@/components/Landing";
 export default function Home() {
   return (
     <main
-      className="inset-1 
+      className="min-h-screen overflow-x-hidden
         dark:bg-[radial-gradient(#ffffff33_1px,transparent_1px)]
         bg-[radial-gradient(#00000033_1px,transparent_1px)]
-        bg-size-[20px_20px] flex justify-center items-center "
+        bg-size-[20px_20px] flex justify-center"
     >
       <Container>
         <Landing />

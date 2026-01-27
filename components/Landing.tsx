@@ -3,7 +3,7 @@ import Hero from "./Hero";
 
 const Landing = () => {
   return (
-    <div className=" h-full w-5xl flex justify-center items-center  bg-white dark:bg-neutral-950  ">
+    <div className=" h-full w-full max-w-5xl flex justify-center items-center  bg-white dark:bg-neutral-950  ">
       <div
         className=" h-full bg-[linear-gradient(to_right,#00000014_1px,transparent_1px),
               linear-gradient(to_bottom,#0000000F_1px,transparent_1px)]
@@ -13,8 +13,6 @@ const Landing = () => {
         <div className="h-full sm:w-[90%] md:w-[85%] border border-dashed border-neutral-600/40 dark:border-neutral-500/50 sm:py-16  flex flex-col ">
           {/* Mobile Layout */}
           <Hero />
-          <Aboutme />
-          <Aboutme />
           <Aboutme />
         </div>
       </div>

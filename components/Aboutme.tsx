@@ -14,23 +14,6 @@ const AboutMe = () => (
       functional. While frontend is where ideas come to life, I work across the
       stack to turn concepts into real, usable applications.
     </p>
-
-    <p className="mb-5 text-pretty">
-      I build projects from scratch, design backend logic, and connect
-      everything into smooth, end-to-end systems. I enjoy working with
-      structured data, scalable APIs, and clean architecture just as much as
-      designing polished UIs.
-    </p>
-
-    <p className="text-pretty">
-      I like experimenting with small product ideas, launching side projects,
-      and continuously refining them based on usability and performance.
-      Learning by building is core to my process—I break things, fix them, and
-      make them better each time. Whether it’s a dashboard, a tool, or a
-      SaaS-style application, my goal is always the same: build products that
-      are practical, well-designed, and genuinely useful for the people who use
-      them.
-    </p>
   </article>
 );
 
