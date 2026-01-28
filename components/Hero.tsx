@@ -14,7 +14,7 @@ const Hero = () => {
 
         {/* Image on left, Name and details on right in one line for mobile */}
         <div className="flex items-center gap-2 w-full">
-          <div className="w-20 h-20 shrink-0 flex-none">
+          <div className="w-24 h-24 shrink-0 flex-none">
             <Image
               src={"/images.jpeg"}
               alt="sjx"
@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
 
           <div className="flex-1 flex flex-col justify-center min-w-0">
-            <h1 className="w-fit font-mono text-2xl text-neutral-800 dark:text-neutral-300 tracking-tighter border border-dashed border-neutral-600/40 dark:border-white/20 px-1.5 py-0.5 leading-tight">
+            <h1 className="w-fit font-mono text-3xl text-neutral-800 dark:text-neutral-300 tracking-tighter border border-dashed border-neutral-600/40 dark:border-white/20 px-1.5 py-0.5 leading-tight">
               Aayush Rawat
             </h1>
             <div className="flex items-center gap-1.5 pt-0.5 flex-wrap">
