@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
 
           <div className="flex-1 flex flex-col justify-center min-w-0">
-            <h1 className="w-fit font-mono text-3xl text-neutral-800 dark:text-neutral-300 tracking-tighter border border-dashed border-neutral-600/40 dark:border-white/20 px-1.5 py-0.5 leading-tight">
+            <h1 className="font-semibold font-mono text-3xl text-neutral-800 dark:text-neutral-300 tracking-tighter dark:border-white/20 px-1.5 py-0.5 leading-tight">
               Aayush Rawat
             </h1>
             <div className="flex items-center gap-1.5 pt-0.5 flex-wrap">
@@ -44,21 +44,21 @@ const Hero = () => {
 
       <div className="hidden md:flex border-b border-t border-dashed border-neutral-600/40 dark:border-neutral-500/50 justify-between">
         <div className="w-[50%] flex">
-          <div className="sm:w-[35%] border-r border-dashed border-neutral-500/50">
+          <div className="sm:w-[25%] border-r border-dashed border-neutral-500/50">
             <Image
               src={"/images.jpeg"}
               alt="sjx"
               quality={99}
-              height={200}
-              width={200}
-              className="h-full rounded-full w-full border border-neutral-500/60 p-1"
+              height={120}
+              width={120}
+              className="rounded-full border border-neutral-500/60 p-1"
             />
           </div>
-          <div className="pt-15 px-3">
-            <h1 className="font-mono text-4xl text-neutral-800 dark:text-neutral-300 tracking-tighter border border-dashed border-neutral-600/40 dark:border-white/20 p-2">
+          <div className="pt-5 px-3 flex flex-col">
+            <h1 className="font-semibold font-mono text-4xl text-neutral-800 dark:text-neutral-300 tracking-tighter border-neutral-600/40 dark:border-white/20 p-2">
               Aayush Rawat
             </h1>
-            <div className="flex gap-2">
+            <div className="px-1 flex gap-2 -mt-2">
               <p className="font-mono mt-2 text-sm text-neutral-800 dark:text-neutral-500">
                 21
               </p>
