@@ -12,7 +12,6 @@ const Landing = () => {
         <Aboutme />
         <Contactme />
         <Projects />
-        <Github />
       </div>
     </div>
   );

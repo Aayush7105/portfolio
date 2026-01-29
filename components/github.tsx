@@ -81,7 +81,7 @@ export default async function Github() {
   }
 
   return (
-    <div className="max-w-full space-y-4 overflow-hidden px-0 py-6 md:px-7 border-b border-t border-neutral-500/40 border-dashed dark:border-neutral-500/50">
+    <div className="max-w-full space-y-4 overflow-hidden px-0 py-6 md:px-6 border-b border-t border-neutral-500/40 border-dashed dark:border-neutral-500/50">
       <div className="flex flex-col">
         <p className="text-sm text-neutral-500 p-2">
           <span className="text-primary text-xl font-medium font-mono tracking-wide leading-1">
