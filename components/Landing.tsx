@@ -1,5 +1,6 @@
 import Aboutme from "./Aboutme";
 import Contactme from "./Contactme";
+import Github from "./github";
 import Hero from "./Hero";
 import Projects from "./Project";
 
@@ -11,6 +12,7 @@ const Landing = () => {
         <Aboutme />
         <Contactme />
         <Projects />
+        <Github />
       </div>
     </div>
   );

@@ -1,0 +1,99 @@
+import { githubConfig } from "@/config/github";
+import React from "react";
+import { GithubCalendarClient } from "./github-calender";
+
+type ContributionItem = {
+  date: string;
+  count: number;
+  level: 0 | 1 | 2 | 3 | 4;
+};
+
+type GitHubContributionResponse = {
+  date: string;
+  contributionCount: number;
+  contributionLevel:
+    | "NONE"
+    | "FIRST_QUARTILE"
+    | "SECOND_QUARTILE"
+    | "THIRD_QUARTILE"
+    | "FOURTH_QUARTILE";
+};
+
+function filterLastYear(contributions: ContributionItem[]): ContributionItem[] {
+  const oneYearAgo = new Date();
+  oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+  return contributions.filter((item) => new Date(item.date) >= oneYearAgo);
+}
+
+async function getContributions(): Promise<ContributionItem[] | null> {
+  try {
+    const res = await fetch(
+      `${githubConfig.apiUrl}/${githubConfig.username}.json`,
+      { next: { revalidate: 3600 } },
+    );
+
+    if (!res.ok) return null;
+    const data: { contributions?: unknown[] } = await res.json();
+    if (!data?.contributions || !Array.isArray(data.contributions)) return null;
+
+    const flattened = data.contributions.flat();
+
+    const map = {
+      NONE: 0,
+      FIRST_QUARTILE: 1,
+      SECOND_QUARTILE: 2,
+      THIRD_QUARTILE: 3,
+      FOURTH_QUARTILE: 4,
+    };
+
+    const valid = flattened
+      .filter(
+        (item: unknown): item is GitHubContributionResponse =>
+          typeof item === "object" &&
+          item !== null &&
+          "date" in item &&
+          "contributionCount" in item &&
+          "contributionLevel" in item,
+      )
+      .map((item) => ({
+        date: String(item.date),
+        count: Number(item.contributionCount || 0),
+        level: (map[item.contributionLevel as keyof typeof map] || 0) as
+          | 0
+          | 1
+          | 2
+          | 3
+          | 4,
+      }));
+
+    return filterLastYear(valid);
+  } catch (err) {
+    console.error("Failed to fetch GitHub contributions:", err);
+    return null;
+  }
+}
+
+export default async function Github() {
+  const contributions = await getContributions();
+
+  if (!contributions || contributions.length === 0) {
+    return <></>;
+  }
+
+  return (
+    <div className="relative mx-auto max-w-fit space-y-4 overflow-hidden px-0 py-6 md:px-3.5">
+      <div className="flex flex-col">
+        <p className="text-sm text-neutral-500">
+          <span className="text-primary text-[0.9rem] font-medium">
+            Commit Canvas
+          </span>{" "}
+          <span className="italic">
+            where every push tells a story of progress.
+          </span>
+        </p>
+      </div>
+
+      <GithubCalendarClient contributions={contributions} />
+    </div>
+  );
+}
