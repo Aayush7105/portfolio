@@ -74,7 +74,7 @@ export const GithubCalendarClient = ({ contributions }: CalendarProps) => {
       return React.cloneElement(block, {
         onMouseEnter: () => handleMouseEnter(activity),
         onMouseLeave: handleMouseLeave,
-      });
+      } as never);
     },
   };
 
@@ -82,7 +82,7 @@ export const GithubCalendarClient = ({ contributions }: CalendarProps) => {
     <>
       <div
         aria-hidden
-        className="scrollbar-hide font-jetbrains relative hidden w-full overflow-x-auto text-xs dark:block"
+        className="scrollbar-hide font-mono relative hidden w-full overflow-x-auto text-sm dark:block"
       >
         <ActivityCalendar
           {...commonProps}
@@ -94,7 +94,7 @@ export const GithubCalendarClient = ({ contributions }: CalendarProps) => {
 
       <div
         aria-hidden
-        className="scrollbar-hide font-jetbrains relative block w-full overflow-x-auto text-xs dark:hidden"
+        className="scrollbar-hide font-jetbrains relative block w-full overflow-x-auto text-md dark:hidden"
       >
         <ActivityCalendar
           {...commonProps}

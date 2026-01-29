@@ -48,13 +48,13 @@ const Projects = async () => {
 
   return (
     <section id="projects">
-      <div className="w-full space-y-4 px-0 py-6 md:px-3.5">
-        <div className="flex flex-col">
-          <p className="text-sm text-neutral-500">
-            <span className="text-primary text-[0.9rem] font-medium">
-              Projects
-            </span>{" "}
-            <span className="italic">
+      <div className="w-full space-y-4 px-0 py-6 md:px-6">
+        <div className="flex flex-col ">
+          <p className="text-sm text-neutral-500 font-mono  px-2">
+            <span className="text-primary text-xl font-medium tracking-tighter">
+              Projects{" "}
+            </span>
+            <span className="italic text-sm font-mono">
               that combine code, design, and usability.
             </span>
           </p>
