@@ -47,7 +47,6 @@ const Hero = () => {
             <Image
               src={"/images.jpeg"}
               alt="sjx"
-              quality={99}
               height={120}
               width={120}
               className="rounded-full border border-neutral-500/60 p-1"

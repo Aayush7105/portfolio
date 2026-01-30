@@ -53,7 +53,7 @@ export const GithubCalendarClient = ({ contributions }: CalendarProps) => {
 
   const commonProps = {
     data: contributions,
-    blockSize: 13,
+    blockSize: 11,
     blockMargin: 2.5,
     blockRadius: 3,
     fontSize: githubConfig.fontSize,
@@ -94,7 +94,7 @@ export const GithubCalendarClient = ({ contributions }: CalendarProps) => {
 
       <div
         aria-hidden
-        className="scrollbar-hide font-jmono relative block w-full overflow-x-auto text-md dark:hidden"
+        className=" font-mono relative block w-full overflow-x-auto text-md dark:hidden"
       >
         <ActivityCalendar
           {...commonProps}
