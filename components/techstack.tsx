@@ -144,7 +144,7 @@ const Techstack = () => {
                           ? "rounded-full border border-neutral-200 bg-neutral-50"
                           : "rounded-sm",
                         tech.padded
-                          ? "p-1 border border-neutral-100 bg-neutral-50"
+                          ? "p-1 border border-neutral-200 bg-neutral-50"
                           : "",
                         tech.name === "Java" ? "-mx-1" : "",
                         tech.name === "Git" ? "sm:mx-1 md:mx-0" : "",
