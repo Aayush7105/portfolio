@@ -48,7 +48,7 @@ const Projects = async () => {
 
   return (
     <section id="projects">
-      <div className="w-full space-y-4 px-0 py-5 md:px-6 border-b border-dashed border-neutral-500/40 dark:border-neutral-500/50 ">
+      <div className="w-full space-y-4 px-0 py-5 md:px-6  border-neutral-500/40 dark:border-neutral-500/50 ">
         <div className="flex flex-col ">
           <p className="text-sm text-neutral-500 font-mono  px-2">
             <span className="text-primary text-xl font-medium tracking-tighter">
