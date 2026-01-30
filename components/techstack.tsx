@@ -11,7 +11,7 @@ import {
 const Techstack = () => {
   return (
     <TooltipProvider delayDuration={200} skipDelayDuration={0}>
-      <div className="flex flex-col px-5 py-7 md:px-8 md:py-7 border-b border-dashed border-neutral-500/40 dark:border-neutral-500/50 ">
+      <div className="flex flex-col px-5 py-7 md:px-7 md:py-8 border-b border-dashed border-neutral-500/40 dark:border-neutral-500/50 ">
         <h1 className="text-primary text-[22px] font-medium tracking-tighter font-mono mb-4">
           TechStack
         </h1>
