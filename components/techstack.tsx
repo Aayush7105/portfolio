@@ -10,8 +10,8 @@ import {
 
 const Techstack = () => {
   return (
-    <TooltipProvider>
-      <div className="flex flex-col px-5 py-5 md:px-8 md:py-5 border-b border-dashed border-neutral-500/40 dark:border-neutral-500/50 ">
+    <TooltipProvider delayDuration={200} skipDelayDuration={0}>
+      <div className="flex flex-col px-5 py-7 md:px-8 md:py-7 border-b border-dashed border-neutral-500/40 dark:border-neutral-500/50 ">
         <h1 className="text-primary text-[22px] font-medium tracking-tighter font-mono mb-4">
           TechStack
         </h1>
@@ -19,7 +19,11 @@ const Techstack = () => {
         <div className="flex flex-wrap md:flex-nowrap gap-2 justify-start md:justify-start items-center">
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://www.typescriptlang.org/">
+              <Link
+                href="https://www.typescriptlang.org/"
+                target="_blank"
+                aria-label="TypeScript"
+              >
                 <Image
                   src="/logos/typescript.svg"
                   alt="TypeScript"
@@ -34,7 +38,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+                aria-label="JavaScript"
+              >
                 <Image
                   src="/logos/javascript.svg"
                   alt="JavaScript"
@@ -49,7 +57,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+                aria-label="HTML"
+              >
                 <Image
                   src="/logos/html.svg"
                   alt="HTML"
@@ -64,7 +76,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+                aria-label="CSS"
+              >
                 <Image
                   src="/logos/css.svg"
                   alt="CSS"
@@ -79,7 +95,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://react.dev/learn">
+              <Link
+                href="https://react.dev/learn"
+                target="_blank"
+                aria-label="React"
+              >
                 <Image
                   src="/logos/react.svg"
                   alt="React"
@@ -94,7 +114,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://nodejs.org/en/learn/getting-started/introduction-to-nodejs">
+              <Link
+                href="https://nodejs.org/en/learn/getting-started/introduction-to-nodejs"
+                target="_blank"
+                aria-label="Node.js"
+              >
                 <Image
                   src="/logos/nodejs-icon.svg"
                   alt="Node.js"
@@ -109,7 +133,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://expressjs.com/en/starter/installing.html">
+              <Link
+                href="https://expressjs.com/en/starter/installing.html"
+                target="_blank"
+                aria-label="Express"
+              >
                 <Image
                   src="/logos/Express.svg"
                   alt="Express"
@@ -124,7 +152,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://nextjs.org/">
+              <Link
+                href="https://nextjs.org/"
+                target="_blank"
+                aria-label="Next.js"
+              >
                 <Image
                   src="/logos/nextjs.svg"
                   alt="Next.js"
@@ -139,7 +171,7 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://vite.dev/">
+              <Link href="https://vite.dev/" target="_blank" aria-label="Vite">
                 <Image
                   src="/logos/vite.svg"
                   alt="Vite"
@@ -154,7 +186,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://tailwindcss.com/docs/installation/using-vite">
+              <Link
+                href="https://tailwindcss.com/docs/installation/using-vite"
+                target="_blank"
+                aria-label="Tailwind CSS"
+              >
                 <Image
                   src="/logos/tailwind.svg"
                   alt="Tailwind CSS"
@@ -169,7 +205,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://motion.dev/">
+              <Link
+                href="https://motion.dev/"
+                target="_blank"
+                aria-label="Framer Motion"
+              >
                 <div className="bg-[rgb(255,243,18)] rounded-full h-10 w-10 flex items-center justify-center">
                   <Image
                     src="/logos/Motionlogo.svg"
@@ -185,7 +225,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://motion.dev/">
+              <Link
+                href="https://git-scm.com/"
+                target="_blank"
+                aria-label="Git"
+              >
                 <Image
                   src="/logos/git.svg"
                   alt="Git"
@@ -200,7 +244,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://www.python.org/about/gettingstarted/">
+              <Link
+                href="https://www.python.org/about/gettingstarted/"
+                target="_blank"
+                aria-label="Python"
+              >
                 <Image
                   src="/logos/python.svg"
                   alt="Python"
@@ -215,7 +263,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://docs.oracle.com/en/java/">
+              <Link
+                href="https://docs.oracle.com/en/java/"
+                target="_blank"
+                aria-label="Java"
+              >
                 <Image
                   src="/logos/java.svg"
                   alt="Java"
@@ -230,13 +282,17 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://www.mongodb.com/docs/">
+              <Link
+                href="https://www.mongodb.com/docs/"
+                target="_blank"
+                aria-label="MongoDB"
+              >
                 <Image
                   src="/logos/mongo.svg"
                   alt="MongoDB"
                   height={40}
                   width={40}
-                  className="rounded-full border border-neutral-200 bg-neutral-200"
+                  className="rounded-full border border-neutral-200 bg-neutral-50"
                 />
               </Link>
             </TooltipTrigger>
@@ -245,7 +301,11 @@ const Techstack = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href="https://dev.mysql.com/doc/mysql-getting-started/en/">
+              <Link
+                href="https://dev.mysql.com/doc/mysql-getting-started/en/"
+                target="_blank"
+                aria-label="MySQL"
+              >
                 <Image
                   src="/logos/mysql-icon.svg"
                   alt="MySQL"
