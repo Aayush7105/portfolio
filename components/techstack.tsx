@@ -45,6 +45,13 @@ const Techstack = () => {
           className=" rounded-sm"
         />
         <Image
+          src={"/nodejs-icon.svg"}
+          alt="sjx"
+          height={40}
+          width={40}
+          className=" rounded-sm"
+        />
+        <Image
           src={"/nextjs.svg"}
           alt="sjx"
           height={40}
@@ -58,8 +65,8 @@ const Techstack = () => {
           width={40}
           className=" rounded-sm"
         />
-        <div className="bg-[rgb(255,243,18)] p-1 rounded-sm border">
-          <Image src="/Motionlogo.svg" alt="sjx" height={40} width={40} />
+        <div className="bg-[rgb(255,243,18)]  rounded-full border h-10 w-10 flex items-center justify-center">
+          <Image src="/Motionlogo.svg" alt="sjx" height={32} width={32} />
         </div>
       </div>
     </div>
