@@ -81,14 +81,11 @@ export default async function Github() {
   }
 
   return (
-    <div className="relative  space-y-4 overflow-hidden px-0 py-6 md:px-4 mx-auto">
-      <div className="flex flex-col font-mono">
-        <p className="text-sm text-neutral-500">
-          <span className=" p-2 text-primary text-xl font-medium  ">
-            Commit Canvas
-          </span>{" "}
-          <span className="italic tracking-tighter">
-            where every push tells a story of progress.
+    <div className="max-w-full space-y-4 overflow-hidden px-2 py-6 md:px-6 border-b border-t border-neutral-500/40 border-dashed dark:border-neutral-500/50">
+      <div className="flex flex-col">
+        <p className="text-sm text-neutral-500 p-2">
+          <span className="text-primary text-xl font-medium font-mono tracking-wide leading-1">
+            Commit Canvas{" "}
           </span>
         </p>
       </div>

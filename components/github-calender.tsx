@@ -53,8 +53,8 @@ export const GithubCalendarClient = ({ contributions }: CalendarProps) => {
 
   const commonProps = {
     data: contributions,
-    blockSize: 11,
-    blockMargin: 2.5,
+    blockSize: 12,
+    blockMargin: 1.5,
     blockRadius: 3,
     fontSize: githubConfig.fontSize,
     maxLevel: githubConfig.maxLevel,
