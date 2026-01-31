@@ -34,7 +34,7 @@ const ProjectsGrid = ({ projects }: { projects: ProjectProps[] }) => {
         <div className="flex">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="text-xs font-medium text-neutral-500"
+            className="text-xs font-medium text-neutral-500 font-mono tracking-tighter "
           >
             {showAll ? (
               <ShowButton text="Show Less" />
@@ -130,7 +130,7 @@ const ProjectCard = ({ data }: { data: ProjectProps }) => {
             </div>
 
             <div className="mt-3 flex w-full items-center justify-between">
-              <div className="mb-1 text-sm font-[450] text-neutral-900 dark:text-neutral-100">
+              <div className="mb-1 text-sm font-[450] text-neutral-900 dark:text-neutral-100 font-mono tracking-tighter">
                 {name}
               </div>
 
@@ -144,7 +144,7 @@ const ProjectCard = ({ data }: { data: ProjectProps }) => {
               )}
             </div>
 
-            <div className="font-jetbrains text-xs tracking-tight text-neutral-500">
+            <div className="font-mono text-xs tracking-tight text-neutral-500">
               <div>{shortDesc}</div>
             </div>
           </div>

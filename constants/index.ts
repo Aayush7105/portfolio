@@ -1,8 +1,8 @@
 export const projectdata = [
   {
-    image: "/gradient.jpg",
-    name: "Project-1",
-    shortDesc: "Coming soon",
+    image: "/Project-1.png",
+    name: "Weather-Dashborad",
+    shortDesc: "A fast, responsive Next.js weather app for instantly checking real-time weather and key metrics for any city..",
     LiveLink: "https://google.com",
     githubLink: "https://",
     showStars: true,
