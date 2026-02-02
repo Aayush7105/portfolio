@@ -4,7 +4,7 @@ export const projectdata = [
     name: "Weather-Dashborad",
     shortDesc: "A fast, responsive Next.js weather app for instantly checking real-time weather and key metrics for any city..",
     LiveLink: "https://google.com",
-    githubLink: "https://",
+    githubLink: "https://github.com/Aayush7105/weather-dashboard",
     showStars: true,
   },
   {
@@ -12,7 +12,7 @@ export const projectdata = [
     name: "TechBlog",
     shortDesc: "A modern Next.js blogging platform where users can write, publish, and read tech articles in a clean, fast, and responsive UI.",
     LiveLink: "https://tech-blog-aayush.vercel.app/",
-    githubLink: "",
+    githubLink: "https://github.com/Aayush7105/Blog-app",
     showStars: true,
   },
 

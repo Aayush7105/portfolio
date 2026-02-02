@@ -14,62 +14,62 @@ const Techstack = () => {
       name: "TypeScript",
       href: "https://www.typescriptlang.org/",
       src: "/logos/typescript.svg",
-      size: 40,
+      size: 36,
     },
     {
       name: "JavaScript",
       href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       src: "/logos/javascript.svg",
-      size: 40,
+      size: 36,
     },
     {
       name: "HTML",
       href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
       src: "/logos/html.svg",
-      size: 40,
+      size: 36,
     },
     {
       name: "CSS",
       href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
       src: "/logos/css.svg",
-      size: 40,
+      size: 36,
     },
     {
       name: "React",
       href: "https://react.dev/learn",
       src: "/logos/react.svg",
-      size: 40,
+      size: 36,
     },
     {
       name: "Node.js",
       href: "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
       src: "/logos/nodejs-icon.svg",
-      size: 40,
+      size: 36,
     },
     {
       name: "Express",
       href: "https://expressjs.com/en/starter/installing.html",
       src: "/logos/Express.svg",
-      size: 40,
+      size: 36,
       rounded: true,
     },
     {
       name: "Next.js",
       href: "https://nextjs.org/",
       src: "/logos/nextjs.svg",
-      size: 40,
+      size: 36,
     },
     {
       name: "Vite",
       href: "https://vite.dev/",
       src: "/logos/vite.svg",
-      size: 40,
+      size: 36,
     },
     {
       name: "Tailwind CSS",
       href: "https://tailwindcss.com/docs/installation/using-vite",
       src: "/logos/tailwind.svg",
-      size: 40,
+      size: 36,
     },
     {
       name: "Framer Motion",
@@ -82,32 +82,32 @@ const Techstack = () => {
       name: "Git",
       href: "https://git-scm.com/",
       src: "/logos/git.svg",
-      size: 40,
+      size: 36,
     },
     {
       name: "Python",
       href: "https://www.python.org/about/gettingstarted/",
       src: "/logos/python.svg",
-      size: 40,
+      size: 36,
     },
     {
       name: "Java",
       href: "https://docs.oracle.com/en/java/",
       src: "/logos/java.svg",
-      size: 40,
+      size: 36,
     },
     {
       name: "MongoDB",
       href: "https://www.mongodb.com/docs/",
       src: "/logos/mongo.svg",
-      size: 40,
+      size: 36,
       rounded: true,
     },
     {
       name: "MySQL",
       href: "https://dev.mysql.com/doc/mysql-getting-started/en/",
       src: "/logos/mysql-icon.svg",
-      size: 40,
+      size: 36,
       padded: true,
     },
   ];
@@ -119,7 +119,7 @@ const Techstack = () => {
           TechStack
         </h1>
 
-        <div className="flex flex-wrap md:flex-nowrap gap-2 justify-start items-center">
+        <div className="flex flex-wrap gap-2 justify-start items-center">
           {techs.map((tech) => (
             <Tooltip key={tech.name}>
               <TooltipTrigger asChild>
