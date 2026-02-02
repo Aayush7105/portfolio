@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaGithub, FaStar } from "react-icons/fa";
-import { LuGithub } from "react-icons/lu";
 import { MdArrowOutward } from "react-icons/md";
 
 interface ProjectProps {
@@ -34,7 +33,7 @@ const ProjectsGrid = ({ projects }: { projects: ProjectProps[] }) => {
         <div className="flex">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="text-xs font-medium text-neutral-500 font-mono tracking-tighter "
+            className="text-xs font-medium text-neutral-500"
           >
             {showAll ? (
               <ShowButton text="Show Less" />
@@ -123,14 +122,14 @@ const ProjectCard = ({ data }: { data: ProjectProps }) => {
                     }}
                     className="rounded-full bg-neutral-900 p-1 text-white shadow-lg transition-transform hover:scale-105 active:scale-95 dark:bg-neutral-100 dark:text-black"
                   >
-                    <LuGithub size={16} />
+                    <FaGithub size={16} />
                   </motion.div>
                 </div>
               )}
             </div>
 
             <div className="mt-3 flex w-full items-center justify-between">
-              <div className="mb-1 text-sm font-[450] text-neutral-900 dark:text-neutral-100 font-jetbrains tracking-tighter">
+              <div className="mb-1 text-sm font-[450] text-neutral-900 dark:text-neutral-100">
                 {name}
               </div>
 
