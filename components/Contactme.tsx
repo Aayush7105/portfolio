@@ -68,8 +68,8 @@ const Contactme = () => {
         .map(({ name, url, Icon }) => (
           <div key={name} className="px-1.5 sm:px-8 md:px-8">
             <Link href={url} target="_blank" aria-label={name}>
-              <button className="group flex gap-2 px-4 py-1 border rounded-lg dark:border-neutral-700/50 bg-neutral-50 dark:bg-neutral-900 justify-center items-center font-mono text-neutral-700 dark:text-neutral-400 text-lg hover:text-neutral-950 dark:hover:text-neutral-200 hover:border-neutral-600/50 dark:hover:bg-neutral-800 hover:bg-neutral-100 cursor-pointer">
-                <Icon className="group-hover:text-neutral-950 text-neutral-700 dark:text-neutral-400 dark:group-hover:text-neutral-200" />
+              <button className="group flex gap-2 px-4 py-1 border rounded-lg dark:border-neutral-400/50 bg-neutral-50 dark:bg-neutral-700 justify-center items-center font-mono text-neutral-700 dark:text-neutral-300 text-lg :text-neutral-950 dark:hover:text-neutral-50 hover:border-neutral-600/50 dark:hover:bg-neutral-800 hover:bg-neutral-100 cursor-pointer">
+                <Icon className="group-hover:text-neutral-950 text-neutral-700 dark:text-neutral-300 dark:group-hover:text-neutral-100" />
                 {name}
               </button>
             </Link>
