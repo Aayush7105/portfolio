@@ -52,8 +52,8 @@ const Hero = () => {
             <motion.div
               className="relative"
               style={{
-                width: 100,
-                height: 100,
+                width: 95,
+                height: 95,
                 transformStyle: "preserve-3d",
               }}
               whileHover={{ rotateY: 180 }}
@@ -67,8 +67,8 @@ const Hero = () => {
                 <Image
                   src={"/pfp1.jpeg"}
                   alt="sjx"
-                  height={120}
-                  width={120}
+                  height={95}
+                  width={95}
                   className="rounded-full border border-neutral-500/60 p-1 object-cover"
                 />
               </div>
@@ -84,8 +84,8 @@ const Hero = () => {
                 <Image
                   src={"/pfp2.jpeg"}
                   alt="sjx"
-                  height={120}
-                  width={120}
+                  height={95}
+                  width={95}
                   className="rounded-full border border-neutral-500/60 p-1 object-cover"
                 />
               </div>
