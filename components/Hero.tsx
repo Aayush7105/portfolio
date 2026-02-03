@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="flex items-center gap-2 w-full">
           <div className="w-24 h-24 shrink-0 flex-none">
             <Image
-              src={"/images.jpeg"}
+              src={"/pfp1.jpeg"}
               alt="sjx"
               height={56}
               width={56}
