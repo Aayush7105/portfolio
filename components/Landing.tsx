@@ -4,6 +4,7 @@ import Container from "./container";
 import Footer from "./footer";
 import Github from "./github";
 import Hero from "./Hero";
+import LeetCode from "./leetcode";
 import Projects from "./Project";
 import Techstack from "./techstack";
 

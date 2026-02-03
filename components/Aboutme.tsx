@@ -1,10 +1,10 @@
 import React from "react";
 
 const AboutMe = () => (
-  <article className=" px-2 py-5 font-mono text-sm tracking-tight text-neutral-700 dark:text-neutral-400/70 sm:px-8 sm:pt-8 md:px-10">
-    <p className=" text-pretty">
+  <article className=" px-2 py-5 font-mono text-sm tracking-normal text-neutral-700 dark:text-neutral-400 sm:px-8 sm:pt-8 md:px-10">
+    <p className=" text-pretty italic">
       I’m a{" "}
-      <strong className="text-neutral-800 dark:text-neutral-200">
+      <strong className="text-neutral-800 dark:text-neutral-50">
         Full-Stack Developer
       </strong>{" "}
       who enjoys building clean, fast, and intuitive digital experiences. I
