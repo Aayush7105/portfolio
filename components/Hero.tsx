@@ -52,8 +52,8 @@ const Hero = () => {
             <motion.div
               className="relative"
               style={{
-                width: 120,
-                height: 120,
+                width: 100,
+                height: 100,
                 transformStyle: "preserve-3d",
               }}
               whileHover={{ rotateY: 180 }}
@@ -65,10 +65,10 @@ const Hero = () => {
                 style={{ backfaceVisibility: "hidden" }}
               >
                 <Image
-                  src="/pfp1.jpeg"
+                  src={"/pfp1.jpeg"}
                   alt="sjx"
-                  width={120}
                   height={120}
+                  width={120}
                   className="rounded-full border border-neutral-500/60 p-1 object-cover"
                 />
               </div>
@@ -82,16 +82,16 @@ const Hero = () => {
                 }}
               >
                 <Image
-                  src="/pfp2.jpeg"
-                  alt="sjx back"
-                  width={120}
+                  src={"/pfp2.jpeg"}
+                  alt="sjx"
                   height={120}
-                  className="rounded-full border border-neutral-500/60 p-1 "
+                  width={120}
+                  className="rounded-full border border-neutral-500/60 p-1 object-cover"
                 />
               </div>
             </motion.div>
           </div>
-          <div className="pt-5 px-3 flex flex-col">
+          <div className="pt-3 px-3 flex flex-col ">
             <h1 className="font-semibold font-mono text-4xl text-neutral-800 dark:text-neutral-300 tracking-tighter border-neutral-600/40 dark:border-white/20 p-2">
               Aayush Rawat
             </h1>
