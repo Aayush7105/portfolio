@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Provider from "@/Provider/provider";
+import CursorPet from "@/components/CursorPet";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,8 +37,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jetbrains.variable} antialiased `}
       >
-        <Provider>{children}</Provider>
+        <Provider>
+          <CursorPet />
+          {children}
+        </Provider>
       </body>
     </html>
   );
 }
+
+
+

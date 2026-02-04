@@ -160,3 +160,14 @@ body::-webkit-scrollbar {
   scrollbar-width: none !important;
   -ms-overflow-style: none !important;
 }
+
+.cat-container {
+  position: fixed;
+  z-index: 99999;
+  pointer-events: none;
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  image-rendering: pixelated;
+}
