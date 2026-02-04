@@ -101,7 +101,6 @@ const ProjectCard = ({ data }: { data: ProjectProps }) => {
             <div className="relative mx-auto h-40 w-full overflow-hidden rounded-sm">
               <Image
                 fill
-                quality={90}
                 className="rounded-sm object-cover"
                 src={image}
                 alt={name}
