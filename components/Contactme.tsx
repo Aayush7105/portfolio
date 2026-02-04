@@ -33,12 +33,12 @@ const Contactme = () => {
       url: "https://leetcode.com/u/Aayush_Rawat7105/",
       Icon: SiLeetcode,
     },
-    {
-      name: "Resume",
-      url: "./Resume.pdf",
-      Icon: FiFileText,
-    },
   ];
+  const resume = {
+    name: "Resume",
+    url: "./Resume.pdf",
+    Icon: FiFileText,
+  };
 
   return (
     <div className="pb-7 flex flex-col gap-4 border-b border-dashed border-neutral-500/40 dark:border-neutral-500/50">
@@ -62,19 +62,12 @@ const Contactme = () => {
         </div>
       </TooltipProvider>
 
-      {/* Resume button (same as your previous UI) */}
-      {links
-        .filter((item) => item.name === "Resume")
-        .map(({ name, url, Icon }) => (
-          <div key={name} className="px-1.5 sm:px-8 md:px-8">
-            <Link href={url} target="_blank" aria-label={name}>
-              <button className="group flex gap-2 px-4 py-1 border rounded-lg dark:border-neutral-400/50 bg-neutral-50 dark:bg-neutral-700 justify-center items-center font-mono text-neutral-700 dark:text-neutral-300 text-lg :text-neutral-950 dark:hover:text-neutral-50 hover:border-neutral-600/50 dark:hover:bg-neutral-800 hover:bg-neutral-100 cursor-pointer">
-                <Icon className="group-hover:text-neutral-950 text-neutral-700 dark:text-neutral-300 dark:group-hover:text-neutral-100" />
-                {name}
-              </button>
-            </Link>
-          </div>
-        ))}
+      <button className=" mx-8 w-fit group flex gap-2 px-4 py-1 border rounded-lg dark:border-neutral-400/50 bg-neutral-50 dark:bg-neutral-700 justify-center items-center font-mono text-neutral-700 dark:text-neutral-300 text-lg :text-neutral-950 dark:hover:text-neutral-50 hover:border-neutral-600/50 dark:hover:bg-neutral-800 hover:bg-neutral-100 cursor-pointer">
+        <resume.Icon className="group-hover:text-neutral-950 text-neutral-700 dark:text-neutral-300 dark:group-hover:text-neutral-100" />
+        <Link href={resume.url} target="_blank" aria-label={resume.name}>
+          {resume.name}
+        </Link>
+      </button>
     </div>
   );
 };

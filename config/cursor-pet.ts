@@ -7,8 +7,8 @@ export function startCursorPet() {
 
   window.catExtensionActive = true;
 
-  const SPEED = 1.5;
-  const REACH_THRESHOLD = 10;
+  const SPEED = 1;
+  const REACH_THRESHOLD = 200;
   const SPRITE_URL = "/Frames/Frames.png";
 
   let mouseX = window.innerWidth / 2;
