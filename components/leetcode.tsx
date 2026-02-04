@@ -25,7 +25,7 @@ const getLevel = (count: number): 0 | 1 | 2 | 3 | 4 => {
 async function getLeetCodeContributions(): Promise<ContributionItem[] | null> {
   try {
     const res = await fetch(
-      "https://leetcode-stats-api.herokuapp.com/Aayush_rawat7105",
+      "https://leetcode-stats-api.herokuapp.com/Aayush_Rawat7105",
       {
         next: { revalidate: 3600 },
       },
