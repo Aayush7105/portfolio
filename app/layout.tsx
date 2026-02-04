@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Provider from "@/Provider/provider";
-import CursorPet from "@/components/CursorPet";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,14 +37,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jetbrains.variable} antialiased `}
       >
-        <Provider>
-          <CursorPet />
-          {children}
-        </Provider>
+        <Provider>{children}</Provider>
+        <Script src="/cursorpet/oneko.js" strategy="afterInteractive" />
       </body>
     </html>
   );
 }
-
-
-
