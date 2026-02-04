@@ -21,6 +21,7 @@
   let idleAnimationFrame = 0;
 
   const nekoSpeed = 10;
+  const stopDistance = 256;
   const spriteSets = {
     idle: [[-3, -3]],
     alert: [[-7, -3]],
@@ -96,6 +97,9 @@
     nekoEl.style.top = `${nekoPosY - 16}px`;
     nekoEl.style.zIndex = 2147483647;
 
+    // nekoEl.style.transform = "scale(1.2)";
+    // nekoEl.style.transformOrigin = "top left";
+
     let nekoFile = "/cursorpet/oneko.gif";
     const curScript = document.currentScript;
     if (curScript && curScript.dataset.cat) {
@@ -145,32 +149,16 @@
 
     // every ~ 20 seconds
     if (
-      idleTime > 10 &&
-      Math.floor(Math.random() * 200) == 0 &&
+      idleTime > 5 &&
+      Math.floor(Math.random() * 40) == 0 &&
       idleAnimation == null
     ) {
-      let avalibleIdleAnimations = ["sleeping", "scratchSelf"];
-      if (nekoPosX < 32) {
-        avalibleIdleAnimations.push("scratchWallW");
-      }
-      if (nekoPosY < 32) {
-        avalibleIdleAnimations.push("scratchWallN");
-      }
-      if (nekoPosX > window.innerWidth - 32) {
-        avalibleIdleAnimations.push("scratchWallE");
-      }
-      if (nekoPosY > window.innerHeight - 32) {
-        avalibleIdleAnimations.push("scratchWallS");
-      }
-      idleAnimation =
-        avalibleIdleAnimations[
-          Math.floor(Math.random() * avalibleIdleAnimations.length)
-        ];
+      idleAnimation = "scratchSelf";
     }
 
     switch (idleAnimation) {
       case "sleeping":
-        if (idleAnimationFrame < 8) {
+        if (idleAnimationFrame < 4) {
           setSprite("tired", 0);
           break;
         }
@@ -179,14 +167,11 @@
           resetIdleAnimation();
         }
         break;
-      case "scratchWallN":
-      case "scratchWallS":
-      case "scratchWallE":
-      case "scratchWallW":
       case "scratchSelf":
         setSprite(idleAnimation, idleAnimationFrame);
         if (idleAnimationFrame > 9) {
-          resetIdleAnimation();
+          idleAnimation = "sleeping";
+          idleAnimationFrame = 0;
         }
         break;
       default:
@@ -202,7 +187,7 @@
     const diffY = nekoPosY - mousePosY;
     const distance = Math.sqrt(diffX ** 2 + diffY ** 2);
 
-    if (distance < nekoSpeed || distance < 48) {
+    if (distance < nekoSpeed || distance < stopDistance) {
       idle();
       return;
     }
