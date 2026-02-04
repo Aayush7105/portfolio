@@ -94,7 +94,7 @@ export const GithubCalendarClient = ({ contributions }: CalendarProps) => {
 
       <div
         aria-hidden
-        className=" font-mono relative block w-full overflow-x-auto text-md dark:hidden"
+        className=" font-jetbrains relative block w-full overflow-x-auto text-md dark:hidden"
       >
         <ActivityCalendar
           {...commonProps}
