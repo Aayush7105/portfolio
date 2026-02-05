@@ -114,7 +114,7 @@ const Techstack = () => {
 
   return (
     <TooltipProvider delayDuration={200} skipDelayDuration={0}>
-      <div className="flex flex-col px-5 py-7 md:px-7 md:py-8 border-b border-dashed border-neutral-500/40 dark:border-neutral-500/50">
+      <div className="flex flex-col px-5 py-7 md:px-7 md:py-8 border-b border-dashed border-neutral-500/40 dark:border-neutral-700/50">
         <p className="text-sm text-neutral-500 py-2">
           <span className="text-primary text-[22px] font-medium font-mono tracking-tighter leading-1">
             TechStack{" "}

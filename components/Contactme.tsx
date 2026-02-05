@@ -41,7 +41,7 @@ const Contactme = () => {
   };
 
   return (
-    <div className="pb-7 flex flex-col gap-4 border-b border-dashed border-neutral-500/40 dark:border-neutral-500/50">
+    <div className="pb-7 flex flex-col gap-4 border-b border-dashed border-neutral-500/40 dark:border-neutral-700/50">
       <TooltipProvider delayDuration={150}>
         <div className="flex px-2 sm:px-8 md:px-10 gap-4 items-center">
           {links

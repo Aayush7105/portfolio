@@ -43,10 +43,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="hidden md:flex border-b border-t border-dashed border-neutral-600/40 dark:border-neutral-500/50 justify-between">
+      <div className="hidden md:flex border-b border-t border-dashed border-neutral-600/40 dark:border-neutral-700/50 justify-between">
         <div className="w-[50%] flex">
           <div
-            className="sm:w-[25%] border-r border-dashed border-neutral-500/50 flex justify-center"
+            className="sm:w-[25%] border-r border-dashed border-neutral-700/50 flex justify-center"
             style={{ perspective: 1000 }}
           >
             <motion.div
