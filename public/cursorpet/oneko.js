@@ -21,7 +21,7 @@
   let idleAnimationFrame = 0;
 
   const nekoSpeed = 10;
-  const stopDistance = 256;
+  const stopDistance = 100;
   const spriteSets = {
     idle: [[-3, -3]],
     alert: [[-7, -3]],

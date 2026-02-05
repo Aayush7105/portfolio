@@ -2,10 +2,12 @@ export const projectdata = [
   {
     image: "/Project-1.png",
     name: "Weather-Dashborad",
-    shortDesc: "A fast, responsive Next.js weather app for instantly checking real-time weather and key metrics for any city..",
-    LiveLink: "https://google.com",
+    shortDesc: "A fast, responsive Next.js weather app for instantly checking real-time weather and key metrics for any city.",
+    LiveLink: "https://weather-dashboard-aayush.vercel.app/",
     githubLink: "https://github.com/Aayush7105/weather-dashboard",
-    showStars: true,
+    showStars: false,
+    stack: ["Next.js", "Typescript", "Tailwind"]
+
   },
   {
     image: "/Project-2.png",
@@ -13,7 +15,8 @@ export const projectdata = [
     shortDesc: "A modern Next.js blogging platform where users can write, publish, and read tech articles in a clean, fast, and responsive UI.",
     LiveLink: "https://tech-blog-aayush.vercel.app/",
     githubLink: "https://github.com/Aayush7105/Blog-app",
-    showStars: true,
+    showStars: false,
+    stack: ["Next.js", "Typescript", "MongoDb", "Tailwind", "Expressjs"]
   },
 
 

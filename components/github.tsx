@@ -88,7 +88,7 @@ export default async function Github() {
             Commit Canvas{" "}
           </span>
           <span className="italic text-sm font-mono tracking-normal">
-            Where every commit reflects my journey toward better code.
+            Small commits. Real progress.
           </span>
         </p>
       </div>

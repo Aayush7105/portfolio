@@ -55,7 +55,7 @@ const Projects = async () => {
               Projects{" "}
             </span>
             <span className="italic text-sm font-mono">
-              that combine code, design, and usability.
+              Building simple, reliable web products.
             </span>
           </p>
         </div>
