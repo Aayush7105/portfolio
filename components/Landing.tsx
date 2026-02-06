@@ -17,7 +17,6 @@ const Landing = () => {
         <Contactme />
         <Projects />
         <Github />
-        <LeetCode />
         <Techstack />
         <Footer />
       </Container>
