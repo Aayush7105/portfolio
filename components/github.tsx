@@ -1,5 +1,4 @@
 import { githubConfig } from "@/config/github";
-import React from "react";
 import { GithubCalendarClient } from "./github-calender";
 
 type ContributionItem = {
@@ -29,7 +28,7 @@ async function getContributions(): Promise<ContributionItem[] | null> {
   try {
     const res = await fetch(
       `${githubConfig.apiUrl}/${githubConfig.username}.json`,
-      { next: { revalidate: 3600 } },
+      { next: { revalidate: 300 } },
     );
 
     if (!res.ok) return null;
