@@ -6,17 +6,17 @@ export const projectdata = [
     LiveLink: "https://weather-dashboard-aayush.vercel.app/",
     githubLink: "https://github.com/Aayush7105/weather-dashboard",
     showStars: false,
-    stack: ["Next.js", "Typescript", "Tailwind"]
+    stack: ["Next.js", "Typescript", "Tailwindcss", "Expressjs", "Framer Motion"]
 
   },
   {
     image: "/Project-2.png",
     name: "TechBlog",
-    shortDesc: "A modern Next.js blogging platform where users can write, publish, and read tech articles in a clean, fast, and responsive UI.",
+    shortDesc: "A modern Next.js blogging platform where users can write, publish, and read tech articles about latest tech",
     LiveLink: "https://tech-blog-aayush.vercel.app/",
     githubLink: "https://github.com/Aayush7105/Blog-app",
     showStars: false,
-    stack: ["Next.js", "Typescript", "MongoDb", "Tailwind", "Expressjs"]
+    stack: ["Next.js", "Typescript", "MongoDb", "Tailwindcss", "Expressjs"]
   },
 
 

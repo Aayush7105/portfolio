@@ -166,7 +166,7 @@ const ProjectCard = ({ data }: { data: ProjectProps }) => {
                   {stack.map((tech) => (
                     <span
                       key={tech}
-                      className="rounded bg-neutral-100 px-1.5 py-0.5 text-[10px] font-medium text-neutral-600
+                      className="rounded bg-neutral-100 px-1.5 py-0.5 text-[12px] font-medium text-neutral-500
                                  dark:bg-neutral-800 dark:text-neutral-400"
                     >
                       {tech}
