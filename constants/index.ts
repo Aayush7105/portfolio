@@ -10,7 +10,7 @@ export const projectdata = [
 
   },
   {
-    image: "/Project-2.png",
+    image: "/Project-2-new.png",
     name: "TechBlog",
     shortDesc: "A modern Next.js blogging platform where users can write, publish, and read tech articles about latest tech",
     LiveLink: "https://tech-blog-aayush.vercel.app/",
