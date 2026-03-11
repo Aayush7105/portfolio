@@ -1,12 +1,12 @@
 export const projectdata = [
   {
-    image: "/Project-1.png",
-    name: "Weather-Dashborad",
-    shortDesc: "A fast, responsive Next.js weather app for instantly checking real-time weather and key metrics for any city.",
-    LiveLink: "https://weather-dashboard-aayush.vercel.app/",
-    githubLink: "https://github.com/Aayush7105/weather-dashboard",
+    image: "/Project-clashkeys.png",
+    name: "ClashKeys",
+    shortDesc: "ClashKeys is a real-time multiplayer typing race platform where users can compete with friends and track typing speed, accuracy, and errors",
+    LiveLink: "https://clashkeys.aayushrawat.in/",
+    githubLink: "https://github.com/Aayush7105/clashkeys",
     showStars: false,
-    stack: ["Next.js", "Typescript", "Tailwindcss", "Expressjs", "Framer Motion"]
+    stack: ["Next.js", "Typescript", "Tailwindcss", "Socket.io", "Framer Motion"]
 
   },
   {
@@ -18,7 +18,15 @@ export const projectdata = [
     showStars: false,
     stack: ["Next.js", "Typescript", "MongoDb", "Tailwindcss", "Expressjs"]
   },
+  {
+    image: "/Project-1.png",
+    name: "Weather-Dashborad",
+    shortDesc: "A fast, responsive Next.js weather app for instantly checking real-time weather and key metrics for any city.",
+    LiveLink: "https://weather-dashboard-aayush.vercel.app/",
+    githubLink: "https://github.com/Aayush7105/weather-dashboard",
+    showStars: false,
+    stack: ["Next.js", "Typescript", "Tailwindcss", "Expressjs", "Framer Motion"]
 
-
+  },
 
 ];

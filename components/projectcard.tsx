@@ -15,13 +15,13 @@ interface ProjectProps {
   githubLink?: string;
   showStars?: boolean;
   stars?: number;
-  stack?: string[]; // ✅ added
+  stack?: string[];
 }
 
 const ProjectsGrid = ({ projects }: { projects: ProjectProps[] }) => {
   const [showAll, setShowAll] = useState(false);
 
-  const displayedProjects = showAll ? projects : projects.slice(0, 4);
+  const displayedProjects = showAll ? projects : projects.slice(0, 2);
 
   return (
     <div className="space-y-3">
@@ -31,7 +31,7 @@ const ProjectsGrid = ({ projects }: { projects: ProjectProps[] }) => {
         ))}
       </div>
 
-      {projects.length > 4 && (
+      {projects.length > 2 && (
         <div className="flex">
           <button
             onClick={() => setShowAll(!showAll)}
