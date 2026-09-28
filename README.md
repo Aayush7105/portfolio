@@ -1,4 +1,4 @@
-# Hi there, I'm Aayush Rawat 
+# Hi everyone, I'm Aayush Rawat 
 
 I'm a **Computer Science undergraduate** passionate about building modern, user-centric web applications. I enjoy turning ideas into scalable and interactive products using **React**, **Next.js**, **TypeScript**, **Node.js**, and **Tailwind CSS**.
 
