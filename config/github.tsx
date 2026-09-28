@@ -7,7 +7,7 @@
 
 export const githubConfig = {
   username: "Aayush7105", // user your own github username here
-  apiUrl: "https://github-contributions-api.deno.dev",
+  apiUrl: "https://github-contributions-api.jogruber.de/v4",
 
   // Chart settings
   fontSize: 10,

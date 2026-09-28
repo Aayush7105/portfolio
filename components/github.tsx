@@ -9,25 +9,27 @@ type ContributionItem = {
 
 type GitHubContributionResponse = {
   date: string;
-  contributionCount: number;
-  contributionLevel:
-    | "NONE"
-    | "FIRST_QUARTILE"
-    | "SECOND_QUARTILE"
-    | "THIRD_QUARTILE"
-    | "FOURTH_QUARTILE";
+  count: number;
+  level: 0 | 1 | 2 | 3 | 4;
 };
 
 function filterLastYear(contributions: ContributionItem[]): ContributionItem[] {
+  const today = new Date();
   const oneYearAgo = new Date();
-  oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
-  return contributions.filter((item) => new Date(item.date) >= oneYearAgo);
+  oneYearAgo.setFullYear(today.getFullYear() - 1);
+  
+  return contributions
+    .filter((item) => {
+      const itemDate = new Date(item.date);
+      return itemDate >= oneYearAgo && itemDate <= today;
+    })
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }
 
 async function getContributions(): Promise<ContributionItem[] | null> {
   try {
     const res = await fetch(
-      `${githubConfig.apiUrl}/${githubConfig.username}.json`,
+      `${githubConfig.apiUrl}/${githubConfig.username}`,
       { next: { revalidate: 300 } },
     );
 
@@ -37,32 +39,19 @@ async function getContributions(): Promise<ContributionItem[] | null> {
 
     const flattened = data.contributions.flat();
 
-    const map = {
-      NONE: 0,
-      FIRST_QUARTILE: 1,
-      SECOND_QUARTILE: 2,
-      THIRD_QUARTILE: 3,
-      FOURTH_QUARTILE: 4,
-    };
-
     const valid = flattened
       .filter(
         (item: unknown): item is GitHubContributionResponse =>
           typeof item === "object" &&
           item !== null &&
           "date" in item &&
-          "contributionCount" in item &&
-          "contributionLevel" in item,
+          "count" in item &&
+          "level" in item,
       )
       .map((item) => ({
         date: String(item.date),
-        count: Number(item.contributionCount || 0),
-        level: (map[item.contributionLevel as keyof typeof map] || 0) as
-          | 0
-          | 1
-          | 2
-          | 3
-          | 4,
+        count: Number(item.count || 0),
+        level: Number(item.level || 0) as 0 | 1 | 2 | 3 | 4,
       }));
 
     return filterLastYear(valid);
